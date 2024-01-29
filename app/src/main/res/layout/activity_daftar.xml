@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".daftar">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/oldblue"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Tombol Kembali"
+            android:onClick="back"
+            android:src="@drawable/baseline_arrow_back_24"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Daftar"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/formulir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Silakan Isi Data Diri Anda"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/Black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/formulir"
+                android:layout_marginTop="10dp"
+                android:padding="6dp"
+                android:text="Nama Lengkap*"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fullname"
+                android:background="@drawable/border"
+                android:hint="masukkan nama lengkap"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="6dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/nik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editNama"
+                android:layout_marginTop="8dp"
+                android:padding="6dp"
+                android:text="NIK*"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editNik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nik"
+                android:background="@drawable/border"
+                android:hint="masukkan NIK"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="6dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ttl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editNik"
+                android:layout_marginTop="8dp"
+                android:padding="6dp"
+                android:text="Tempat/Tanggal Lahir (dd-mm-yyyy)*"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTgl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ttl"
+                android:background="@drawable/border"
+                android:hint="masukkan tempat dan tanggal lahir sesuai KTP"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="6dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/jenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTgl"
+                android:layout_marginTop="8dp"
+                android:padding="6dp"
+                android:text="Jenis Kelamin*"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/editJenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jenis"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioPr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioLk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="L"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editJenis"
+                android:layout_marginTop="8dp"
+                android:padding="6dp"
+                android:text="Pekerjaan*"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editPekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pekerjaan"
+                android:background="@drawable/border"
+                android:hint="pekerjaan anda saat ini"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="6dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/agama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editPekerjaan"
+                android:layout_marginTop="10dp"
+                android:padding="6dp"
+                android:text="Agama*"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editAgama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agama"
+                android:background="@drawable/border"
+                android:hint="agama"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="6dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editAgama"
+                android:layout_marginTop="8dp"
+                android:padding="6dp"
+                android:text="Status Perkawinan*"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/editStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioLajang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lajang"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioMenikah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Menikah"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editStatus"
+                android:layout_marginTop="8dp"
+                android:padding="6dp"
+                android:text="Alamat Rumah*(blok no. rumah)"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alamat"
+                android:background="@drawable/border"
+                android:hint="blok no.rumah(contoh: Blok A 10)"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="6dp"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="120dp"
+                android:layout_below="@+id/editAlamat"
+                android:layout_marginTop="20dp"
+                android:id="@+id/buttonSimpan"
+                android:text="Simpan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:elevation="10dp"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Aplikasi RT 01</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_logout">Logout</string>
+    <string name="formulir">Formulir</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="nik_ktp">NIK KTP</string>
+    <string name="tempat_tgl_lahir_dd_mm_yyyy">Tempat/Tgl Lahir(DD/MM/YYYY)</string>
+    <string name="jenis_kelamin_l_p">Jenis Kelamin(L/P)</string>
+    <string name="pekerjaan">Pekerjaan</string>
+    <string name="agama">Agama</string>
+    <string name="status_lajang_kawin">Status(Lajang/Kawin</string>
+    <string name="no_rumah_ex_blok_a10">No Rumah(ex: Blok A10)</string>
+    <string name="simpan">Simpan</string>
+</resources>

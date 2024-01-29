@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@color/oldblue">
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:onClick="ClickMenu"
+        android:src="@drawable/baseline_menu_24"/>
+
+    <TextView
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="RT 01"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28dp"/>
+
+
+</LinearLayout>

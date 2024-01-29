@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#AD03A9F4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="@string/formulir"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nama_lengkap"
+            android:inputType="textCapSentences"/>
+
+        <EditText
+            android:id="@+id/et_nik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nik_ktp"
+            android:inputType="textCapSentences"/>
+
+        <EditText
+            android:id="@+id/et_tgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tempat_tgl_lahir_dd_mm_yyyy"
+            android:inputType="textCapSentences"/>
+
+        <EditText
+            android:id="@+id/et_jenis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/jenis_kelamin_l_p"
+            android:inputType="textCapSentences"/>
+        <EditText
+            android:id="@+id/et_pekerjaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pekerjaan"
+            android:inputType="textCapSentences"/>
+
+        <EditText
+            android:id="@+id/et_agama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/agama"
+            android:inputType="textCapSentences"/>
+
+        <EditText
+            android:id="@+id/et_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/status_lajang_kawin"
+            android:inputType="textCapSentences"/>
+
+        <EditText
+            android:id="@+id/et_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/no_rumah_ex_blok_a10"
+            android:inputType="textCapSentences"/>
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/simpan"/>
+
+    </LinearLayout>
+
+</LinearLayout>
