@@ -48,7 +48,7 @@ public class Menu_utama extends AppCompatActivity {
             case 0:
                 // Handle click on the first item in the grid (Daftar)
                 // Example: Open a new activity
-                startActivity(new Intent(Menu_utama.this, daftar.class));
+                startActivity(new Intent(this, daftar.class));
                 break;
             case 1:
                 // Handle click on the second item in the grid (Domisili)

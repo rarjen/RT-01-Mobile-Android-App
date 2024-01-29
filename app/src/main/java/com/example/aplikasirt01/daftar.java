@@ -50,7 +50,7 @@ public class daftar extends AppCompatActivity {
         radioGroupJenis = findViewById(R.id.editJenis);
         radioGroupStatus = findViewById(R.id.editStatus);
 
-        findViewById(R.id.button_simpan).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.buttonSimpan).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 validateAndRegisterUser();
